@@ -22,19 +22,7 @@ class IdeHelperRun extends Command
     protected $description = 'Generate a IDE Helper files if current environment is local.';
 
     /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
-    /**
      * Execute the console command.
-     *
-     * @return mixed
      */
     public function handle()
     {
