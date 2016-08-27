@@ -2,10 +2,6 @@
 
 Ранняя альфа.
 
-Установлены [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) и [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper).
-Работают только в среде `local`.
-
-Установлен [laravel/socialite](https://github.com/laravel/socialite) и дополнительные провайдеры для ВКонтакте, Яндекс, Маил.ру и Одноклассников.
 
 Изменения:
 
@@ -16,7 +12,10 @@
 
 * type hints в разных местах;
 * русские языковые файлы;
-* базовая модель `App\Core\Model`, от которой можно наследовать свои модели.
+* базовая модель `App\Core\Model`, от которой можно наследовать свои модели;
+* ключ `app.local_providers` для провайдеров, которые будут загружаться только в среде `local`;
+* пакет [laravel/socialite](https://github.com/laravel/socialite) и дополнительные провайдеры для ВКонтакте, Яндекс, Маил.ру и Одноклассников;
+* пакеты [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) и [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper), подключаются в `app.local_providers`.
 
 Планы:
 
