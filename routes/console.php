@@ -1,6 +1,6 @@
 <?php
 
-use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
+use Illuminate\Foundation\Inspiring;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +13,6 @@ use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
 |
 */
 
-$this->command('ide-helper:run', function () {
-    if (!App::getProvider(IdeHelperServiceProvider::class)) {
-        $this->info(sprintf('Skipped. IdeHelper not registered for %s environment.', App::environment()));
-        return;
-    }
-    $this->call('ide-helper:generate');
-    $this->call('ide-helper:meta');
+Artisan::command('inspire', function () {
+    $this->comment(Inspiring::quote());
 });
