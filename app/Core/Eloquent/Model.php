@@ -2,7 +2,9 @@
 
 namespace App\Core\Eloquent;
 
-abstract class Model extends \Eloquent
+use Illuminate\Database\Eloquent\Model as Eloquent;
+
+abstract class Model extends Eloquent
 {
     public static function getTableName()
     {
