@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Foundation\Inspiring;
+use Illuminate\Foundation\Console\Kernel;
+
+/** @var Kernel $this */
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,6 @@ use Illuminate\Foundation\Inspiring;
 |
 */
 
-Artisan::command('inspire', function () {
+$this->command('inspire', function () {
     $this->comment(Inspiring::quote());
 });

@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Routing\Router;
+
+/** @type Router $router */
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/user', function (Request $request) {
+$router->get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
