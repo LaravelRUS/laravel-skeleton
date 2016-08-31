@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\App as App;
 
 class IdeHelperRun extends Command
 {
@@ -26,8 +27,8 @@ class IdeHelperRun extends Command
      */
     public function handle()
     {
-        if (!\App::getProvider(IdeHelperServiceProvider::class)) {
-            $this->info(sprintf('Skipped. IdeHelper not registered for %s environment.', \App::environment()));
+        if (!App::getProvider(IdeHelperServiceProvider::class)) {
+            $this->info(sprintf('Skipped. IdeHelper not registered for %s environment.', App::environment()));
             return;
         }
         $this->call('ide-helper:generate');
