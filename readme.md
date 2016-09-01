@@ -5,7 +5,7 @@
 
 <p align="center">
     <img src="https://avatars3.githubusercontent.com/u/5966874?v=3&s=200"><br><br>
-    <strong>Базовый Skeleton-проект сообщества LaravelRUS.</strong><br>
+    <strong>Скелет приложения на базе Laravel 5.3 от сообщества LaravelRUS.</strong><br>
     Ранняя альфа.
 </p>
 
