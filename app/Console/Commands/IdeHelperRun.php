@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\App as App;
+use Illuminate\Support\Facades\App;
 
 class IdeHelperRun extends Command
 {
