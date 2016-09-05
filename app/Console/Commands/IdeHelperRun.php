@@ -2,11 +2,16 @@
 
 namespace App\Console\Commands;
 
-use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
 use Illuminate\Console\Command;
+use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
 
 class IdeHelperRun extends Command
 {
+    /**
+     * @var \Illuminate\Foundation\Application
+     */
+    protected $laravel;
+
     /**
      * The name and signature of the console command.
      *
@@ -26,10 +31,15 @@ class IdeHelperRun extends Command
      */
     public function handle()
     {
-        if (!\App::getProvider(IdeHelperServiceProvider::class)) {
-            $this->info(sprintf('Skipped. IdeHelper not registered for %s environment.', \App::environment()));
+        if (! $this->laravel->getProvider(IdeHelperServiceProvider::class)) {
+            $this->info(sprintf(
+                'Skipped. IdeHelper not registered for %s environment.',
+                $this->laravel->environment()
+            ));
+
             return;
         }
+
         $this->call('ide-helper:generate');
         $this->call('ide-helper:meta');
     }
