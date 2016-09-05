@@ -35,10 +35,4 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
-    'smscru' => [
-        'login'  => env('SMSCRU_LOGIN'),
-        'secret' => env('SMSCRU_SECRET'),
-        'sender' => 'John_Doe'
-    ],
-
 ];
