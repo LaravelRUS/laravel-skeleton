@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Routing\Router;
 
-/** @type Router $router */
+/** @var Router $router */
 
 /*
 |--------------------------------------------------------------------------
