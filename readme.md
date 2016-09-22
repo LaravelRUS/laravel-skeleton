@@ -23,7 +23,7 @@
 * русские языковые файлы;
 * базовая модель `App\Core\Model`, от которой можно наследовать свои модели;
 * ключ `app.local_providers` для провайдеров, которые будут загружаться только в среде `local`;
-* пакет [laravel/socialite](https://github.com/laravel/socialite) и дополнительные провайдеры для ВКонтакте, Яндекс, Маил.ру и Одноклассников;
+* пакет [laravel/socialite](https://github.com/laravel/socialite) и дополнительные провайдеры для ВКонтакте, Яндекс, Маил.ру и Одноклассников (для активации - раскомментировать провайдер `SocialiteProviders\Manager\ServiceProvider`);
 * пакеты [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) и [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper), подключаются в `app.local_providers`.
 
 #### Планы:
