@@ -4,11 +4,15 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-/**
- * @property  \Illuminate\Foundation\Application $app  The application instance.
- */
 class AppServiceProvider extends ServiceProvider
 {
+    /**
+     * The application instance.
+     *
+     * @var \Illuminate\Foundation\Application
+     */
+    protected $app;
+        
     /**
      * Bootstrap any application services.
      *
