@@ -4,6 +4,9 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * @property  \Illuminate\Foundation\Application $app  The application instance.
+ */
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -23,11 +26,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if ($this->app->environment() === 'local') {
+        if ($this->app->isLocal()) {
             $localProviders = config('app.local_providers', []);
-            foreach ($localProviders as $provider) {
-                $this->app->register($provider);
-            }
+            array_map([$this->app, 'register'], $localProviders);
         }
     }
 }
