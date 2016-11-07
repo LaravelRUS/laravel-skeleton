@@ -6,7 +6,6 @@
 <p align="center">
     <img src="https://avatars3.githubusercontent.com/u/5966874?v=3&s=200"><br><br>
     <strong>Скелет приложения на базе Laravel 5.3 от сообщества LaravelRUS.</strong><br>
-    Ранняя альфа.
 </p>
 
 --
@@ -25,7 +24,3 @@
 * ключ `app.local_providers` для провайдеров, которые будут загружаться только в среде `local`;
 * пакет [laravel/socialite](https://github.com/laravel/socialite) и дополнительные провайдеры для ВКонтакте, Яндекс, Маил.ру и Одноклассников (для активации - раскомментировать провайдер `SocialiteProviders\Manager\ServiceProvider`);
 * пакеты [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) и [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper), подключаются в `app.local_providers`.
-
-#### Планы:
-
-* удалить `routes/console.php` и возможность создавать консольные команды через анонимные функции.
