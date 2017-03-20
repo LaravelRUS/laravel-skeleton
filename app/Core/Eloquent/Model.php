@@ -2,12 +2,9 @@
 
 namespace App\Core\Eloquent;
 
-use Illuminate\Database\Eloquent\Model as EloquentModel;
+use Illuminate\Database\Eloquent\Model as Eloquent;
 
-/**
- * @mixin \Eloquent
- */
-abstract class Model extends EloquentModel
+abstract class Model extends Eloquent
 {
     /**
      * @return string
