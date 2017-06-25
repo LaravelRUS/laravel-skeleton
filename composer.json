@@ -1,9 +1,19 @@
 {
-    "name": "laravel/laravel",
+    "name": "laravelrus/skeleton",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": ["framework", "laravel", "laravelrus"],
     "license": "MIT",
     "type": "project",
+    "authors": [
+        {
+            "name": "JhaoDa",
+            "email": "jhaoda@gmail.com"
+        },
+        {
+            "name": "atehnix",
+            "homepage": "https://vk.com/atehnix"
+        }
+    ],
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.4.*",
@@ -49,6 +59,7 @@
     },
     "config": {
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "optimize-autoloader": true
     }
 }
